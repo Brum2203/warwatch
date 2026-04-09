@@ -167,11 +167,7 @@ Always respond in ${langName}. Be factual, balanced, and cite context when relev
       {/* Header */}
       <header style={{ borderBottom: "1px solid #1e2d3d", padding: "14px 24px", display: "flex", alignItems: "center", justifyContent: "space-between", background: "#080c14", position: "sticky", top: 0, zIndex: 100 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
-            <div className="pulse" style={{ width: 8, height: 8, borderRadius: "50%", background: "#ef4444" }} />
-            <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 22, letterSpacing: 4, color: "#00ff88" }}>{t.title}</span>
-          </div>
-          <span style={{ fontSize: 9, color: "#334155", letterSpacing: 2, display: "none", "@media(min-width:600px)": { display: "block" } }}>{t.subtitle}</span>
+          <img src="/logo.png" alt="WarWatch" style={{ height: 48, objectFit: "contain" }} />
         </div>
         <div style={{ display: "flex", gap: 6, flexWrap: "wrap", justifyContent: "flex-end" }}>
           {Object.entries(LANGUAGES).map(([code, { flag, name }]) => (
