@@ -79,7 +79,7 @@ export default function App() {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-api-key": import.meta.env.VITE_ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
         body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
+          model: "claude-sonnet-4-5",
           max_tokens: 1000,
           system: `You are a war correspondent AI. Generate 3 realistic, factual-style news headlines about current global conflicts (Ukraine, Gaza, Sudan, Myanmar, Yemen, Sahel/Mali, Syria, Ethiopia). 
 Return ONLY valid JSON array, no markdown, no explanation:
@@ -112,7 +112,7 @@ Use realistic sources. Make headlines factual and informative. Vary regions and 
         method: "POST",
         headers: { "Content-Type": "application/json", "x-api-key": import.meta.env.VITE_ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
         body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
+          model: "claude-sonnet-4-5",
           max_tokens: 1000,
           system: `You are an expert journalist and analyst specialized in global conflicts and wars. You have deep knowledge of ongoing conflicts: Ukraine-Russia war, Gaza-Israel conflict, Sudan civil war, Myanmar civil war, Yemen war, Sahel/Mali jihadist insurgency, Syrian conflict, Ethiopian conflicts, and others.
 
